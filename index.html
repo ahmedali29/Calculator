@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Calculator website"/>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+    <h1>AhCalculator</h1>
+    <span>Made by Ahmed Ali</span>
+    <div class="calculator">
+      <div class="display-screen-container">
+        <div class="display-screen">
+          <input type="number" id="num-1" />
+        </div>
+        <div class="display-screen">
+          <span id="operator"></span>
+        </div>
+        <div class="display-screen">
+          <input type="number" id="num-2" />
+        </div>
+        <div class="display-screen">
+          <span id="result"></span>
+        </div>
+      </div>
+        <br />
+        
+        <div class="buttons1">
+        <button onclick="handleMathOperator('sr')">√</button>
+        <button onclick="handleClearStepBack()">C</button>
+        <button onclick="handleClearAll()">AC</button>
+        </div>
+           <div class="buttons2">
+        <button onclick="handleMathOperator('**')">^</button>
+        <button onclick="handleNumStatus('-')">(-)</button>
+        <button onclick="handleNumStatus('+')">(+)</button>
+        <button onclick="handleMathOperator('/')">÷</button>
+         
+        <button onclick="handleClickNumber('7')">7</button>
+        <button onclick="handleClickNumber('8')">8</button>
+        <button onclick="handleClickNumber('9')">9</button>
+        <button onclick="handleMathOperator('*')">×</button>
+        
+            <button onclick="handleClickNumber('4')">4</button>
+            <button onclick="handleClickNumber('5')">5</button>
+            <button onclick="handleClickNumber('6')">6</button>
+            <button onclick="handleMathOperator('-')">-</button>
+      
+            <button onclick="handleClickNumber('1')">1</button>
+            <button onclick="handleClickNumber('2')">2</button>
+            <button onclick="handleClickNumber('3')">3</button>
+            <button onclick="handleMathOperator('+')">+</button>
+            <button onclick="handleClickNumber('0')">0</button>
+            <button onclick="handleFractions()">.</button>
+            <button>00</button>
+            <button class="green" onclick="handleResult()">=</button>
+          </div>
+             
+
+    </div>
+    <script src="./calc.js"></script>
+</body>
+</html>
