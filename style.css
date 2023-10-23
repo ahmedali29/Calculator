@@ -8,10 +8,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 2px solid #333;
+  height:50px;
+  border: 2px solid #ccc5c575;
   border-radius: 5px;
   overflow: hidden;
   padding: 1rem;
+  margin-top: 10px;
 }
 .display-screen {
   font-size: 1.2rem;
